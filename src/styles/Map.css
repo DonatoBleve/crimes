@@ -1,0 +1,60 @@
+.custom-draw-button {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    z-index: 2000;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.leaflet-container.drawing {
+    cursor: crosshair !important;
+}
+
+.drawing-tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+@media (max-width: 600px) {
+    .leaflet-container {
+        height: calc(80vh - 56px) !important;
+        width: 88vw !important;
+    }
+
+    @media (min-width: 600px) and (max-width: 960px) {
+        .leaflet-container {
+            height: calc(82vh - 64px) !important;
+            width: 95vw !important;
+        }
+    }
+
+    @media (min-width: 960px) {
+        .leaflet-container {
+            height: calc(85vh) !important;
+            width: calc(100vw) !important;
+        }
+    }
+}
+
+.hue-0 { filter: hue-rotate(0deg); }
+.hue-30 { filter: hue-rotate(30deg); }
+.hue-60 { filter: hue-rotate(60deg); }
+.hue-90 { filter: hue-rotate(90deg); }
+.hue-120 { filter: hue-rotate(120deg); }
+.hue-150 { filter: hue-rotate(150deg); }
+.hue-180 { filter: hue-rotate(180deg); }
+.hue-210 { filter: hue-rotate(210deg); }
+.hue-240 { filter: hue-rotate(240deg); }
+.hue-270 { filter: hue-rotate(270deg); }
+.hue-300 { filter: hue-rotate(300deg); }
+.hue-330 { filter: hue-rotate(330deg); }

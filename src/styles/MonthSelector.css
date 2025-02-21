@@ -1,0 +1,17 @@
+.custom-month-selector {
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    z-index: 3000;
+    position: relative;
+}
+
+.custom-month-selector .MuiSelect-select {
+    z-index: 3000;
+    position: relative;
+}
+
+.custom-month-selector .MuiPaper-root {
+    z-index: 4000;
+    position: relative;
+}
