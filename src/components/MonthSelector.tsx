@@ -3,7 +3,8 @@ import { FormControl, InputLabel, Select, MenuItem, SelectChangeEvent } from '@m
 
 interface MonthSelectorProps {
     month: number;
-    onMonthChange: (month: number) => void;
+    onMonthChange: React.Dispatch<React.SetStateAction<number>>;
+    className?: string;
 }
 
 const MonthSelector: React.FC<MonthSelectorProps> = ({ month, onMonthChange }) => {

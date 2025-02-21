@@ -89,7 +89,6 @@ const Map: React.FC = () => {
         const url = `https://data.police.uk/api/crimes-street/all-crime?date=${date}&poly=${poly}`;
         console.log('Fetching data from:', url);
         try {
-        try {
             const response = await fetch(url);
             if (response.status === 503) {
                 setErrorMessage("The area you have selected contains more than 10,000 crimes. Please try restricting the field.");
